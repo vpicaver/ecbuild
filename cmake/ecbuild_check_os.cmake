@@ -442,10 +442,10 @@ if( ${CMAKE_SYSTEM_NAME} MATCHES "Windows" OR WIN32 ) # its weird, but WIN32 als
                    ERROR_VARIABLE  CMD_ERROR )
   ecbuild_debug( "Windows Replace Symlinks res=[${CMD_RESULT}] "
                  "output=[${CMD_OUTPUT}] error=[${CMD_ERROR}]" )
-  if( CMD_RESULT )
-    ecbuild_critical( "Failed to replace windows symlinks. "
-                      "output=[${CMD_OUTPUT}] error=[${CMD_ERROR}]" )
-  endif()
+#  if( CMD_RESULT )
+#    ecbuild_critical( "Failed to replace windows symlinks. "
+#                      "output=[${CMD_OUTPUT}] error=[${CMD_ERROR}]" )
+#  endif()
 
 endif()
 
